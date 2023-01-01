@@ -82,7 +82,7 @@ class Language extends Strings with ChangeNotifier {
       cache: true,
     );
     final map = json.decode(data);
-        ABOUT_TITLE = map['ABOUT_TITLE']!;
+    ABOUT_TITLE = map['ABOUT_TITLE']!;
     ADD = map['ADD']!;
     ADD_LIBRARY_TO_PLAYLIST_WHEN_PLAYING_FROM_TRACKS_TAB = map['ADD_LIBRARY_TO_PLAYLIST_WHEN_PLAYING_FROM_TRACKS_TAB']!;
     ADD_NEW_FOLDER = map['ADD_NEW_FOLDER']!;
@@ -322,6 +322,7 @@ class Language extends Strings with ChangeNotifier {
     STARTING_PLAYBACK = map['STARTING_PLAYBACK']!;
     STATS_SUBTITLE = map['STATS_SUBTITLE']!;
     STATS_TITLE = map['STATS_TITLE']!;
+    STICKY_MINIPLAYER = map['STICKY_MINIPLAYER']!;
     STREAM = map['STREAM']!;
     THEME_MODE_DARK = map['THEME_MODE_DARK']!;
     THEME_MODE_LIGHT = map['THEME_MODE_LIGHT']!;

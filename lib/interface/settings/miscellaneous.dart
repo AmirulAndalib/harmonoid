@@ -62,7 +62,7 @@ class MiscellaneousSettingState extends State<MiscellaneousSetting> {
           if (isMobile)
             CorrectedSwitchListTile(
               title: Language.instance.STICKY_MINIPLAYER,
-              subtitle: Language.instance.STICKY_MINIPLAYER_SUBTITLE,
+              subtitle: Language.instance.STICKY_MINIPLAYER,
               onChanged: (_) => Configuration.instance
                   .save(
                 stickyMiniplayer: !Configuration.instance.stickyMiniplayer,
