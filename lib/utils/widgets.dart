@@ -79,7 +79,7 @@ class CustomListView extends StatelessWidget {
                 Configuration.instance.stickyMiniplayer &&
                 (scrollDirection ?? Axis.vertical) == Axis.vertical
             ? kMobileNowPlayingBarHeight - (padding?.bottom ?? 0)
-            : kMobileBottomPaddingStickyMiniplayer,
+            : kMobileBottomPaddingSmall,
       ),
       controller: controller,
       scrollDirection: scrollDirection ?? Axis.vertical,
@@ -124,7 +124,7 @@ class CustomListViewBuilder extends StatelessWidget {
                 Configuration.instance.stickyMiniplayer &&
                 (scrollDirection ?? Axis.vertical) == Axis.vertical
             ? kMobileNowPlayingBarHeight
-            : kMobileBottomPaddingStickyMiniplayer,
+            : kMobileBottomPaddingSmall,
       ),
       physics: physics,
     );
@@ -174,7 +174,7 @@ class CustomListViewSeparated extends StatelessWidget {
                 Configuration.instance.stickyMiniplayer &&
                 (scrollDirection ?? Axis.vertical) == Axis.vertical
             ? kMobileNowPlayingBarHeight
-            : kMobileBottomPaddingStickyMiniplayer,
+            : kMobileBottomPaddingSmall,
       ),
       physics: physics,
     );
@@ -2502,13 +2502,6 @@ class NowPlayingBarScrollHideNotifier extends StatelessWidget {
           }
           return true;
         },
-        // dirty way for padding (should be implemented in lists)
-        // child: Padding(
-        //   padding: EdgeInsets.only(
-        //     bottom: isMobile && Configuration.instance.stickyMiniplayer && (Axis.vertical) == Axis.vertical ? kMobileNowPlayingBarHeight : kMobileBottomPaddingStickyMiniplayer,
-        //   ),
-        //   child: child,
-        // ),
         child: child,
       );
     }
